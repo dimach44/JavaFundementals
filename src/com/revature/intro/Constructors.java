@@ -2,7 +2,7 @@ package com.revature.intro;
 
 public class Constructors {
 	public static void main(String[] args) {
-		C c = new C();
+		C c = new C(4);
 	}
 }
 
@@ -14,7 +14,9 @@ class A {
 }
 
 class B extends A {
-	B(){
+	int num;
+	B(){}
+	B(int num){
 		//super();
 		System.out.println("IN CLASS B CONSTRUCTOR");
 	}
@@ -22,7 +24,10 @@ class B extends A {
 
 class C extends B {
 	C() {
-		//super();
+		//super(4);
 		System.out.println("IN CLASS C CONSTRUCTOR");
+	}
+	C(int num){
+		System.out.println(num);
 	}
 }
