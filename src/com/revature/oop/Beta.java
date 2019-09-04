@@ -19,6 +19,6 @@ public class Beta extends Baap {
 		Baap b = new Beta();
 		System.out.println(b.h + " " + b.getH());
 		Beta bb = (Beta) b; //Beta bb = new Beta();
-		System.out.println(b.h + " " + b.getH());
+		System.out.println(bb.h + " " + bb.getH());
 	}
 }
