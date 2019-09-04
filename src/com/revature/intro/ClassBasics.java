@@ -4,6 +4,23 @@ import java.util.Arrays;
 
 public class ClassBasics {
 	
+	private String aboutMe;
+	
+	ClassBasics(){}
+	
+	public ClassBasics(String aboutMe) {
+		super();
+		this.aboutMe = aboutMe;
+	}
+	
+	public String getAboutMe() {
+		return aboutMe;
+	}
+
+	public void setAboutMe(String aboutMe) {
+		this.aboutMe = aboutMe;
+	}
+
 	public static void main(String[] args) {
 		
 		ClassBasics basics = new ClassBasics();
@@ -11,7 +28,7 @@ public class ClassBasics {
 		
 	}
 	
-	public static void sortNums(int[] nums) {
+	public static void sortNums(int... nums) {
 		Arrays.sort(nums);
 	}
 	
@@ -20,9 +37,10 @@ public class ClassBasics {
 	}
 	
 	void learnJava() {
-		//Testing Git
+		sortNums(1);
+		sortNums(100,31,35,124,46,342354);
+		sortNums(1,2,4,5,6);
 	}
-	
 }
 
 class AnotherClass {
