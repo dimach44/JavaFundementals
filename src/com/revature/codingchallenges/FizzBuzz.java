@@ -1,4 +1,4 @@
-package com.revature.oop;
+package com.revature.codingchallenges;
 
 import java.util.Scanner;
 
