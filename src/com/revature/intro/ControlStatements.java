@@ -5,6 +5,21 @@ public class ControlStatements {
 	public static void main(String[] args) {
 		intToHex(90);
 		
+		for (int i = 0;i < args.length;i++) {
+			System.out.println(args[i]);
+		}
+		
+		int num = 1;
+		for ( ; ; ) {
+			num += 2;
+			if (num == args.length) break;
+		}
+		
+		for (String str: args) {
+			System.out.println(str);
+		}
+		
+		
 	}
 	
 	static void intToHex(int n) {
@@ -43,4 +58,5 @@ public class ControlStatements {
 	static int bitwiseOr(int a, int b) {
 		return a | b;
 	}
+	
 }
