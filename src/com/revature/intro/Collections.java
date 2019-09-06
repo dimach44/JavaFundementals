@@ -10,7 +10,7 @@ public class Collections {
 	}
 	
 	static void map(String[] args) {
-		Map<String, Integer> m = new HashMap<String, Integer>();
+		Map<String, Integer> m = new LinkedHashMap<String, Integer>();
 
         // Initialize frequency table from command line
         for (String a : args) {
